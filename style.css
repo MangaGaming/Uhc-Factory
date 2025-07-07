@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('fonts/Minecraftia.ttf') format('truetype');
+}
+
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Minecraftia', sans-serif;
+    background-color: #1c2237;
+    color: #f7f7f7;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1c2237;
+    padding: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.logo-img {
+    height: 42px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffd700;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3c80f6;
+}
+
+.discord-icon {
+    height: 26px;
+    transition: transform 0.2s ease;
+}
+
+.discord-icon:hover {
+    transform: scale(1.1);
+}
+
+/* HERO SECTION */
+.hero {
+    margin-top: 100px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: #3c80f6;
+}
+
+.highlight {
+    color: #ffd700;
+}
+
+.intro {
+    font-size: 1.2em;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* BUTTONS */
+.btn-group {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #ffd700;
+    color: #1c2237;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #3c80f6;
+    color: #fff;
+}
+
+/* SERVICES LIST */
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.service-item {
+    background-color: #27304d;
+    border-left: 6px solid #ffd700;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.service-toggle {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1.05em;
+    font-weight: bold;
+    background: none;
+    color: #ffd700;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-toggle:hover {
+    background-color: #1c2237;
+}
+
+.service-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s;
+    padding: 0 18px;
+    color: #f7f7f7;
+    font-size: 0.95em;
+}
+
+.service-item.open .service-content {
+    max-height: 300px;
+    padding: 10px 18px 18px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    color: #3c80f6;
+    font-size: 1.2em;
+}
+
+.service-item.open .arrow {
+    transform: rotate(90deg);
+}
+
+.narrow {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.equipe {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #27304d;
+    border-left: 6px solid #ffd700;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.equipe h3 {
+    color: #3c80f6;
+    margin-top: 20px;
+}
+
+.equipe h4 {
+    margin: 10px 0 5px;
+    color: #ffd700;
+}
+
+.equipe ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.equipe li {
+    margin-bottom: 5px;
+}
+
+.sous-bloc {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.equipe h3,
+.equipe h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.equipe h3::before,
+.equipe h4::before {
+    font-size: 1.5em;
+}
+
+.equipe h3,
+.equipe h4 {
+    font-size: 1.2em;
+}
+
+.equipe li {
+    font-size: 1em;
+}
+
+.equipe li span.emoji {
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+.footer {
+    background-color: #1f2a38;
+    color: #ffd700;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.legal-content {
+    padding: 30px 20px;
+    margin: auto;
+    max-width: 800px;
+    color: #fff;
+}
+
+.legal-content h1, .legal-content h2 {
+    color: #ffd700;
+    text-align: center;
+}
+
+#mentions-legales\ title {
+    margin-top: 100px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.apropos {
+    padding: 30px 20px;
+    margin: auto;
+    max-width: 800px;
+}
